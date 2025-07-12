@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Goal Breakdown Planner</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Powered Goal Breakdown Planner</h1>
+    <form action="/generate" method="post">
+      <label>Describe Your Goal:</label>
+      <input type="text" name="goal" required>
+      <label>Start Date:</label>
+      <input type="date" name="start_date" required>
+      <label>End Date:</label>
+      <input type="date" name="end_date" required>
+      <label>Total Waking Hours per Day:</label>
+      <input type="number" name="total_hours" required>
+      <label>Fixed Busy Hours per Day:</label>
+      <input type="number" name="busy_hours" required>
+      <button type="submit">Generate Plan</button>
+    </form>
+  </div>
+</body>
+</html>
